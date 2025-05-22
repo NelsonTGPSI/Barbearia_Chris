@@ -162,15 +162,45 @@
         </div>
     </section>
     <!-- Agendamento -->
-    <section class="page-section bg-primary text-white" id="agendamento">
-        <div class="container px-4 px-lg-5 text-center">
-            <h2 class="mb-4">Agende seu horário</h2>
-            <p class="mb-4">Clique no botão abaixo e marque seu corte pelo WhatsApp!</p>
-            <a href="https://wa.me/351910794712" class="btn btn-success btn-xl" target="_blank">
-                <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
-            </a>
+<section class="page-section bg-primary text-white" id="agendamento" style="background: linear-gradient(135deg, #232526 0%, #414345 100%);">
+    <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4" style="font-weight:700; letter-spacing:1px; color:#fff;">Agende seu horário</h2>
+        <p class="mb-4" style="font-size:1.15em; color:#e0e0e0;">
+            Praticidade e rapidez: clique no botão abaixo e marque seu corte pelo WhatsApp. Atendimento personalizado e sem espera!
+        </p>
+        <a href="https://wa.me/351910794712" 
+           class="btn btn-xl d-inline-flex align-items-center justify-content-center agendar-btn" 
+           target="_blank">
+            <i class="fab fa-whatsapp me-2"></i> Agendar pelo WhatsApp
+        </a>
+        <div class="mt-4" style="font-size:1.05em; color:#fff; opacity:0.8;">
+            <i class="bi-clock-history me-2"></i>Horário de atendimento: Seg-Sáb, 09h às 19h
         </div>
-    </section>
+    </div>
+</section>
+<style>
+/* Cores profissionais para o botão de agendamento */
+.agendar-btn {
+    background: linear-gradient(90deg, #25d366 0%, #128c7e 100%);
+    color: #fff !important;
+    font-size: 1.25em;
+    border-radius: 32px;
+    padding: 0.85em 2.2em;
+    box-shadow: 0 4px 24px #128c7e40;
+    border: none;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.agendar-btn:hover, .agendar-btn:focus {
+    background: linear-gradient(90deg, #128c7e 0%, #25d366 100%);
+    color: #fff !important;
+    box-shadow: 0 8px 32px #128c7e60;
+    transform: scale(1.04);
+    text-decoration: none;
+}
+.bg-primary {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%) !important;
+}
+</style>
     <!-- Seção de Localização -->
     <section class="page-section" id="localizacao">
         <div class="container px-4 px-lg-5">
@@ -184,70 +214,105 @@
         </div>
     </section>
     <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0">Envie um email</h2>
-                    <hr class="divider" />
-                    <p class="text-muted mb-5">Envie um email ou deixe uma mensagem no nosso whatsapp</p>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                <div class="col-lg-6">
-                    <form action="https://formsubmit.co/nelsonbsebastiao0@gmail.com" method="POST">
-                        <!-- Honeypot anti-spam -->
-                        <input type="text" name="_honey" style="display:none" autocomplete="off">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" name="Nome" type="text" placeholder="Enter your name..." required />
-                            <label for="Nome">Nome completo</label>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" name="Email" type="email" placeholder="name@example.com" required />
-                            <label for="Email">Email</label>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" name="Telefone" type="tel" placeholder="(123) 456-7890" required />
-                            <label for="Telefone">Número de telefone</label>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" name="Mensagem" placeholder="Digite sua mensagem aqui..." style="height: 10rem" required></textarea>
-                            <label for="Mensagem">Mensagem</label>
-                        </div>
-                        <!-- Campos ocultos -->
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="http://nelsontgpsi.github.io/barbearia_cris/obrigado.html">
-                        <input type="hidden" name="_template" value="box">
-                        <!-- Submit Button-->
-                        <div class="d-grid">
-                            <button class="btn btn-primary btn-xl" type="submit">Submeter</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+  <section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-        <i class="bi-phone fs-2 mb-3 text-muted"></i>
-        <div>+351 910 794 712</div>
-    </div>
-</div>
-<div class="row gx-4 gx-lg-5 justify-content-center">
-    <div class="col-lg-4 my-3 my-lg-0 text-center">
-        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/1Bkx6uBtr9/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a class="btn btn-dark btn-social mx-2" href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/351910794712" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    </div>
-</div>
-            
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0">Entre em Contato</h2>
+                <hr class="divider" />
+                <p class="text-muted mb-5">Fale conosco pelo formulário, WhatsApp ou redes sociais. Retornaremos o mais breve possível!</p>
+            </div>
         </div>
-        
-    </section>
-    
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+                <form action="https://formsubmit.co/nelsonbsebastiao0@gmail.com" method="POST" class="bg-light p-4 rounded shadow-sm">
+                    <!-- Honeypot anti-spam -->
+                    <input type="text" name="_honey" style="display:none" autocomplete="off">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="Nome" type="text" placeholder="Seu nome completo" required />
+                        <label for="Nome">Nome completo</label>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="Email" type="email" placeholder="seu@email.com" required />
+                        <label for="Email">Email</label>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" name="Telefone" type="tel" placeholder="(99) 99999-9999" required />
+                        <label for="Telefone">Número de telefone</label>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" name="Mensagem" placeholder="Digite sua mensagem aqui..." style="height: 10rem" required></textarea>
+                        <label for="Mensagem">Mensagem</label>
+                    </div>
+                    <!-- Campos ocultos -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://nelsontgpsi.github.io/barbearia_cris/obrigado.html">
+                    <input type="hidden" name="_template" value="box">
+                    <!-- Submit Button-->
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-xl" type="submit">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-3">
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <div class="bg-white rounded shadow-sm p-3 d-inline-block">
+                    <i class="bi-phone fs-2 mb-2 text-primary"></i>
+                    <div class="fw-bold">Telefone / WhatsApp</div>
+                    <a href="https://wa.me/351910794712" class="text-decoration-none text-dark" target="_blank" style="font-size:1.15em;">
+                        +351 910 794 712
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4 my-3 my-lg-0 text-center">
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/1Bkx6uBtr9/?mibextid=wwXIfr" target="_blank" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/" target="_blank" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://wa.me/351910794712" target="_blank" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+#contact .form-control, #contact textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+#contact form.bg-light {
+    background: #fff !important;
+}
+#contact .btn-primary.btn-xl {
+    font-size: 1.15em;
+    padding: 0.75em 1.5em;
+    border-radius: 8px;
+}
+#contact .btn-social {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35em;
+    margin: 0 6px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+#contact .btn-social:hover {
+    background: #f4623a;
+    color: #fff !important;
+    box-shadow: 0 2px 8px #0002;
+}
+#contact .bg-white {
+    background: #fff !important;
+}
+</style>  
     <!-- Footer -->
 <footer class="footer py-4" style="background: #222; color: #fff;">
     <div class="container">
