@@ -13,155 +13,330 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-</head>
-<body id="page-top">
+</head><body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 shadow-sm" id="mainNav" style="background: linear-gradient(90deg, #232526 0%, #f44336 100%);">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand d-flex align-items-center" href="#page-top">
-                <img src="assets/img/logo.png" alt="Logo Barbearia Chris" style="height: 60px; margin-right:10px; border-radius:12px;">
-                <span>Barbearia Chris</span>
+            <a class="navbar-brand d-flex align-items-center" href="#page-top" style="font-weight:700; font-size:1.25em; letter-spacing:1px;">
+                <img src="assets/img/logo.png" alt="Logo Barbearia Chris" style="height: 56px; margin-right:12px; border-radius:16px; box-shadow:0 2px 8px #0003;">
+                <span style="color:#fff;">Barbearia Chris</span>
             </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#agendamento">Agendar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#localizacao">Localização</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" style="color:#fff; font-weight:500;">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" style="color:#fff; font-weight:500;">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" style="color:#fff; font-weight:500;">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#agendamento" style="color:#fff; font-weight:500;">Agendar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#localizacao" style="color:#fff; font-weight:500;">Localização</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" style="color:#fff; font-weight:500;">Contato</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <style>
+        #mainNav {
+            background: linear-gradient(90deg, #232526 0%, #f44336 100%) !important;
+            box-shadow: 0 2px 16px #0002;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        #mainNav .navbar-brand img {
+            border-radius: 16px;
+            box-shadow: 0 2px 8px #0003;
+            transition: box-shadow 0.2s;
+        }
+        #mainNav .navbar-brand img:hover {
+            box-shadow: 0 4px 16px #f4433620;
+        }
+        #mainNav .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-left: 8px;
+            margin-right: 8px;
+            transition: color 0.2s, border-bottom 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+        #mainNav .nav-link:hover, #mainNav .nav-link:focus, #mainNav .nav-link.active {
+            color: #ffd600 !important;
+            border-bottom: 2px solid #ffd600;
+            background: none;
+        }
+        #mainNav .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+        #mainNav .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        @media (max-width: 991px) {
+            #mainNav .nav-link {
+                margin-left: 0;
+                margin-right: 0;
+                padding: 0.7em 0;
+                border-bottom: none;
+            }
+        }
+    </style>
     <!-- Masthead-->
-    <header class="masthead">
-        <div class="container px-4 px-lg-5 h-100">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">Transforme seu visual</h1>
-                    <hr class="divider" />
-                </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5">Procura praticidade e qualidade? Agende seu horário pelo WhatsApp e garanta seu melhor corte na Barbearia Chris!</p>
-                    <a class="btn btn-primary btn-xl" href="#about">Saiba mais</a>
-                </div>
+<header class="masthead" style="position: relative; min-height: 100vh; display: flex; align-items: center;">
+    <!-- Overlay preto translúcido para destacar o texto, mas sem esconder a imagem -->
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(20,20,20,0.55);z-index:1;"></div>
+    <div class="container px-4 px-lg-5 h-100" style="position:relative;z-index:2;">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h1 class="text-white font-weight-bold" style="font-size:3rem; letter-spacing:2px; text-shadow:0 4px 24px #0007;">
+                    Transforme seu visual
+                </h1>
+                <hr class="divider" style="border-top:3px solid #f44336; width:90px; margin:auto; margin-bottom:2rem; opacity:0.9;">
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="mb-5" style="font-size:1.25em; color:#fff; text-shadow:0 2px 8px #0005;">
+                    Procura praticidade e qualidade? Agende seu horário pelo WhatsApp e garanta seu melhor corte na <span style="color:#f44336; font-weight:600;">Barbearia Chris</span>!
+                </p>
+                <a class="btn btn-xl px-5 py-3" href="#about" style="background:#f44336; color:#fff; font-weight:700; border-radius:32px; box-shadow:0 4px 24px #f4433620; font-size:1.1em; letter-spacing:1px; transition:background 0.2s,box-shadow 0.2s;">
+                    <i class="bi-arrow-down-circle me-2"></i>Saiba mais
+                </a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     <!-- About-->
-    <section class="page-section bg-primary" id="about">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">Sobre a Barbearia Chris</h2>
-                    <hr class="divider divider-light" />
-                    <p class="text-white mb-4"> Fundada em 2015, a Barbearia Chris oferece cortes modernos, atendimento personalizado e um ambiente acolhedor para todos os clientes. Nossa missão é valorizar seu estilo e proporcionar uma experiência única a cada visita.</p>
-                    <a class="btn btn-light btn-xl" href="#services">Vamos la!</a>
+   <section class="page-section bg-primary" id="about" style="background: linear-gradient(120deg, #232526 0%, #2c3e50 100%);">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center align-items-center">
+            <div class="col-lg-8 text-center">
+                <div class="about-card shadow-lg p-5 rounded-4 mb-4" style="background:rgba(34,37,38,0.92);">
+                    <h2 class="text-white mt-0" style="font-weight:700; letter-spacing:1px;">Sobre a Barbearia Chris</h2>
+                    <hr class="divider divider-light" style="border-top:2.5px solid #f44336; width:80px; margin:auto; margin-bottom:2rem;">
+                    <p class="text-white mb-4" style="font-size:1.18em; line-height:1.7;">
+                        <span style="font-size:1.25em; color:#f44336; font-weight:600;">Fundada em 2015</span>, a <strong>Barbearia Chris</strong> é referência em cortes modernos, atendimento personalizado e um ambiente acolhedor. Nossa missão é valorizar seu estilo e proporcionar uma experiência única a cada visita.<br>
+                        <span style="color:#e0e0e0;">Profissionalismo, tradição e inovação para você se sentir sempre no seu melhor.</span>
+                    </p>
+                    <a class="btn btn-xl px-5 py-3" href="#services" style="background:linear-gradient(90deg,#f44336 0%,#b71c1c 100%); color:#fff; font-weight:600; border-radius:32px; box-shadow:0 4px 24px #f4433620; transition:background 0.2s,box-shadow 0.2s;">
+                        <i class="bi-scissors me-2"></i>Vamos lá!
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<style>
+#about .about-card {
+    background: rgba(34,37,38,0.92);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px #0003;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+#about .about-card:hover {
+    box-shadow: 0 12px 48px #f4433620;
+    transform: translateY(-4px) scale(1.01);
+}
+#about .btn-xl {
+    font-size: 1.15em;
+    border-radius: 32px;
+    padding: 0.85em 2.2em;
+}
+#about .btn-xl:hover, #about .btn-xl:focus {
+    background:linear-gradient(90deg,#b71c1c 0%,#f44336 100%);
+    color:#fff;
+    box-shadow:0 8px 32px #f4433640;
+    text-decoration: none;
+}
+</style>
     <!-- Services-->
-    <section class="page-section" id="services">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">Nossos Serviços</h2>
-            <hr class="divider" />
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-scissors fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Corte Masculino e Infantil</h3>
-                        <p class="text-muted mb-0">Cortes modernos e clássicos para todas as idades, sempre com atenção ao seu estilo.</p>
+<section class="page-section" id="services" style="background: linear-gradient(135deg, #23272f 0%, #2c3e50 100%);">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0" style="color:#fff; font-weight:700; letter-spacing:1px;">Nossos Serviços</h2>
+        <hr class="divider" style="border-top:2.5px solid #f44336; width:80px; margin:auto; margin-bottom:2.5rem;">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5 service-card">
+                    <div class="mb-3">
+                        <i class="bi-scissors fs-1 service-icon"></i>
                     </div>
+                    <h3 class="h4 mb-2" style="color:#fff;">Corte Masculino e Infantil</h3>
+                    <p class="text-muted mb-0">Cortes modernos e clássicos para todas as idades, sempre com atenção ao seu estilo.</p>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-4"><i class="fa-solid fa-user-tie fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Barba e Bigode</h3>
-                        <p class="text-muted mb-0">Modelagem, aparo e desenho de barba e bigode para valorizar seu visual.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5 service-card">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-user-tie fs-1 service-icon"></i>
                     </div>
+                    <h3 class="h4 mb-2" style="color:#fff;">Barba e Bigode</h3>
+                    <p class="text-muted mb-0">Modelagem, aparo e desenho de barba e bigode para valorizar seu visual.</p>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-eye fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Sobrancelha</h3>
-                        <p class="text-muted mb-0">Design e alinhamento de sobrancelhas para um olhar marcante e harmonioso.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5 service-card">
+                    <div class="mb-3">
+                        <i class="bi-eye fs-1 service-icon"></i>
                     </div>
+                    <h3 class="h4 mb-2" style="color:#fff;">Sobrancelha</h3>
+                    <p class="text-muted mb-0">Design e alinhamento de sobrancelhas para um olhar marcante e harmonioso.</p>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-droplet-half fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Lavagem e Hidratação</h3>
-                        <p class="text-muted mb-0">Cuidado completo com lavagem, hidratação e revitalização dos fios.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="mt-5 service-card">
+                    <div class="mb-3">
+                        <i class="bi-droplet-half fs-1 service-icon"></i>
                     </div>
+                    <h3 class="h4 mb-2" style="color:#fff;">Lavagem e Hidratação</h3>
+                    <p class="text-muted mb-0">Cuidado completo com lavagem, hidratação e revitalização dos fios.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<style>
+#services {
+    background: linear-gradient(135deg, #23272f 0%, #2c3e50 100%);
+}
+#services .service-card {
+    background: #292b2f;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 2.2rem 1.2rem 1.5rem 1.2rem;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+#services .service-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px #f4433620;
+}
+#services .service-icon {
+    color: #f44336;
+    background: #fff;
+    border-radius: 50%;
+    padding: 18px;
+    font-size: 2.2em !important;
+    box-shadow: 0 2px 12px #f4433620;
+    margin-bottom: 0.5rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+#services .service-card:hover .service-icon {
+    background: #f44336;
+    color: #fff;
+    box-shadow: 0 4px 24px #f4433640;
+}
+#services h3, #services h2 {
+    color: #fff;
+}
+#services .text-muted {
+    color: #e0e0e0 !important;
+}
+</style>
     <!-- Portfolio Profissional com SimpleLightbox -->
-    <section id="portfolio">
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" data-lightbox="portfolio" title="Corte de cabelo 1">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="Corte de cabelo masculino 1" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Corte</div>
-                            <div class="project-name">Corte de cabelo</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" data-lightbox="portfolio" title="Corte de cabelo 2">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="Corte de cabelo masculino 2" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Corte</div>
-                            <div class="project-name">Corte de cabelo</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" data-lightbox="portfolio" title="Corte de cabelo 3">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="Corte de cabelo masculino 3" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Corte</div>
-                            <div class="project-name">Corte de cabelo</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" data-lightbox="portfolio" title="Corte de cabelo 4">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="Corte de cabelo masculino 4" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Corte</div>
-                            <div class="project-name">Corte de cabelo</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" data-lightbox="portfolio" title="Corte de cabelo 5">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="Corte de cabelo masculino 5" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Corte</div>
-                            <div class="project-name">Corte de cabelo</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" data-lightbox="portfolio" title="Corte de cabelo 6">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="Corte de cabelo masculino 6" />
-                        <div class="portfolio-box-caption p-3">
-                            <div class="project-category text-white-50">Corte</div>
-                            <div class="project-name">Corte de cabelo</div>
-                        </div>
-                    </a>
-                </div>
+    <section id="portfolio" class="portfolio-section py-5" style="background: linear-gradient(120deg, #232526 0%, #414345 100%);">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center text-white mb-5" style="font-weight:700; letter-spacing:1px;">Portfólio Profissional</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box shadow-lg" href="assets/img/portfolio/fullsize/1.jpg" data-lightbox="portfolio" title="Corte de cabelo 1">
+                    <img class="img-fluid rounded-4" src="assets/img/portfolio/thumbnails/1.jpg" alt="Corte de cabelo masculino 1" />
+                    <div class="portfolio-box-caption rounded-bottom-4">
+                        <div class="project-category text-white-50">Corte</div>
+                        <div class="project-name">Corte de cabelo</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box shadow-lg" href="assets/img/portfolio/fullsize/2.jpg" data-lightbox="portfolio" title="Corte de cabelo 2">
+                    <img class="img-fluid rounded-4" src="assets/img/portfolio/thumbnails/2.jpg" alt="Corte de cabelo masculino 2" />
+                    <div class="portfolio-box-caption rounded-bottom-4">
+                        <div class="project-category text-white-50">Corte</div>
+                        <div class="project-name">Corte de cabelo</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box shadow-lg" href="assets/img/portfolio/fullsize/3.jpg" data-lightbox="portfolio" title="Corte de cabelo 3">
+                    <img class="img-fluid rounded-4" src="assets/img/portfolio/thumbnails/3.jpg" alt="Corte de cabelo masculino 3" />
+                    <div class="portfolio-box-caption rounded-bottom-4">
+                        <div class="project-category text-white-50">Corte</div>
+                        <div class="project-name">Corte de cabelo</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box shadow-lg" href="assets/img/portfolio/fullsize/4.jpg" data-lightbox="portfolio" title="Corte de cabelo 4">
+                    <img class="img-fluid rounded-4" src="assets/img/portfolio/thumbnails/4.jpg" alt="Corte de cabelo masculino 4" />
+                    <div class="portfolio-box-caption rounded-bottom-4">
+                        <div class="project-category text-white-50">Corte</div>
+                        <div class="project-name">Corte de cabelo</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box shadow-lg" href="assets/img/portfolio/fullsize/5.jpg" data-lightbox="portfolio" title="Corte de cabelo 5">
+                    <img class="img-fluid rounded-4" src="assets/img/portfolio/thumbnails/5.jpg" alt="Corte de cabelo masculino 5" />
+                    <div class="portfolio-box-caption rounded-bottom-4">
+                        <div class="project-category text-white-50">Corte</div>
+                        <div class="project-name">Corte de cabelo</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box shadow-lg" href="assets/img/portfolio/fullsize/6.jpg" data-lightbox="portfolio" title="Corte de cabelo 6">
+                    <img class="img-fluid rounded-4" src="assets/img/portfolio/thumbnails/6.jpg" alt="Corte de cabelo masculino 6" />
+                    <div class="portfolio-box-caption rounded-bottom-4">
+                        <div class="project-category text-white-50">Corte</div>
+                        <div class="project-name">Corte de cabelo</div>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
-    <!-- Agendamento -->
+    </div>
+</section>
+<style>
+.portfolio-section {
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+}
+.portfolio-box {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #18191a;
+}
+.portfolio-box img {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+.portfolio-box:hover img {
+    transform: scale(1.06);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.portfolio-box-caption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 1.1em 1em 0.9em 1em;
+    background: linear-gradient(0deg, rgba(30,30,30,0.92) 80%, rgba(30,30,30,0.0) 100%);
+    color: #fff;
+    border-radius: 0 0 18px 18px;
+    text-align: left;
+}
+.project-category {
+    font-size: 0.95em;
+    color: #b0b0b0;
+    letter-spacing: 1px;
+    margin-bottom: 0.2em;
+}
+.project-name {
+    font-size: 1.18em;
+    font-weight: 600;
+    color: #fff;
+}
+@media (max-width: 991px) {
+    .portfolio-section .row.g-4 {
+        row-gap: 2rem;
+    }
+}
+</style><!-- Agendamento -->
 <section class="page-section bg-primary text-white" id="agendamento" style="background: linear-gradient(135deg, #232526 0%, #414345 100%);">
     <div class="container px-4 px-lg-5 text-center">
         <h2 class="mb-4" style="font-weight:700; letter-spacing:1px; color:#fff;">Agende seu horário</h2>
@@ -202,17 +377,25 @@
 }
 </style>
     <!-- Seção de Localização -->
-    <section class="page-section" id="localizacao">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0 mb-4">Nossa Localização</h2>
-            <div class="d-flex justify-content-center">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.537209432682!2d-8.42779522422088!3d40.28602947146091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22ff62ab375181%3A0xe3740f5c466268df!2sBarbearia%20Chris%20-%20Souselas%20-%20Coimbra!5e0!3m2!1spt-PT!2spt!4v1747749421310!5m2!1spt-PT!2spt" 
-                    width="600" height="450" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+<section class="page-section" id="localizacao" style="background: linear-gradient(120deg, #232526 0%, #414345 100%);">
+    <div class="container px-4 px-lg-5">
+        <h2 class="text-center mb-4" style="font-weight:700; letter-spacing:1px; color:#fff;">Nossa Localização</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="card shadow-lg border-0" style="border-radius:18px; overflow:hidden;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.537209432682!2d-8.42779522422088!3d40.28602947146091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22ff62ab375181%3A0xe3740f5c466268df!2sBarbearia%20Chris%20-%20Souselas%20-%20Coimbra!5e0!3m2!1spt-PT!2spt!4v1747749421310!5m2!1spt-PT!2spt" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa da Barbearia Chris"></iframe>
+                </div>
+                <div class="text-center mt-3" style="color:#e0e0e0;">
+                    <i class="bi-geo-alt-fill me-2 text-warning"></i>
+                    Rua dos Correios, 3020, Souselas, Coimbra
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- Contact-->
   <section class="page-section" id="contact">
     <div class="container px-4 px-lg-5">
@@ -269,15 +452,7 @@
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-4 my-3 my-lg-0 text-center">
-                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/1Bkx6uBtr9/?mibextid=wwXIfr" target="_blank" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/" target="_blank" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-dark btn-social mx-2" href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-dark btn-social mx-2" href="https://wa.me/351910794712" target="_blank" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
+        </div>      
     </div>
 </section>
 <style>
